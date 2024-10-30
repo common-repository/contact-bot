@@ -1,0 +1,61 @@
+#messageBox {
+
+  #messageList {
+
+    list-style-type: none;
+    padding-bottom: 20px;
+
+    .chatMessage {
+
+      margin: 10px;
+      clear: both;
+
+      .content {
+        display: inline-block;
+        padding: 5px 20px;
+        /* border: 1px solid #aaa;*/
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      &.admin {
+        .content {
+          background: rgb(229, 228, 228);
+          color: #000;
+        }
+      }
+
+      &.client {
+        float: right;
+
+        .content {
+          background: rgb(0, 132, 255);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+#chatBox {
+
+  #chatMessageInput {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Animation */
+/* The starting CSS styles for the enter animation */
+.mcb-fade.ng-enter {
+  transition:0.1s ease all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.mcb-fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
